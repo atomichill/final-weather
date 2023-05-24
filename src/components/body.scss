@@ -1,0 +1,98 @@
+$var30: 30px;
+$var40: 40px;
+
+body {
+    background-color: #0b0b14;
+    
+    .body_wrap {
+      display: flex;
+      justify-content: center;
+      
+      .background_img_night {
+        margin-top: 70px;
+        width: 1400px;
+        height: 800px;
+        background: url(./night.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        
+        position: relative;
+        .body_info {
+          position: absolute;
+        }
+        .weather_main {
+          animation: rollIn 1.5s ease-in-out forwards;
+          opacity: 0; 
+          animation-delay: 0.2s;
+          position: absolute;
+          right: 0;
+        }
+        .btn_clck {
+          width: $var40;
+          height: $var40;
+          border-radius: 100%;
+          border: solid white 4px;
+          cursor: pointer;
+          margin-top: $var30;
+          margin-left: auto;
+          margin-right: $var30;
+          
+        }
+  
+      }
+  
+      .background_img_day {
+        margin-top: 70px;
+        width: 1400px;
+        height: 800px;
+        background: url(./cloudy.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        .body_info {
+          position: absolute;
+        }
+        .weather_main {
+          animation: rollIn 1.5s ease-in-out forwards;
+          opacity: 0; 
+          animation-delay: 0.2s;
+          position: absolute;
+          right: 0;
+        }
+        .btn_clck {
+          width: $var40;
+          height: $var40;
+          border-radius: 100%;
+          border: solid white 4px;
+          cursor: pointer;
+          margin-top: $var30;
+          margin-left: auto;
+          margin-right: $var30;
+          
+        }
+      }
+      
+      @keyframes rollIn {
+        0% {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      
+      .weather_main {
+        animation: rollIn 2s ease-in-out forwards;
+        opacity: 0; 
+        animation-delay: 0.2s;
+      }
+    }
+  }

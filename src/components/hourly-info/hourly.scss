@@ -1,0 +1,11 @@
+.hourly_el {
+    width: 400px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    .time{
+        margin-right: 10px;
+    }
+    
+}

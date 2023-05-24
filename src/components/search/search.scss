@@ -1,0 +1,39 @@
+$maincolor: white;
+$var20: 20px;
+$var10: 10px;
+$var: 50px;
+
+
+.weather_search {
+    display: flex;
+    
+    align-items: flex-end;
+    .search {
+        color: $maincolor;
+        outline: 0;
+        border-width: 0 0 2px;
+        border-color: $maincolor;
+        background: none;
+        width: 300px;
+        height: $var;
+        font-size: $var20;
+    }
+    .btn {
+        background: rgba( 255, 255, 255, 0.2 );
+        
+        backdrop-filter: blur( $var10 );
+        -webkit-backdrop-filter: blur( $var10 );
+        border-radius: $var10;
+        
+        
+        color: $maincolor;
+        border: none;
+        border-radius: $var20;
+        cursor: pointer;
+        height: $var;
+        width: 150px;
+        font-size: $var20;
+        font-family: 'Hind Siliguri';
+        margin-left: $var20;
+    }
+}

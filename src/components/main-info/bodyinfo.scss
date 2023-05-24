@@ -1,0 +1,48 @@
+$var50:50px;
+$var150: 150px;
+$var20: 20px;
+    .info_wrap {
+        margin-left: $var50;
+        padding: $var50;
+        height: 700px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title {
+            font-size: 25px;
+        }
+        .background_info {
+            img {
+                height: $var150;
+                margin-left: 10px;
+            }
+            display: flex;
+            align-items: center;
+            .temp {
+                font-size: $var150;
+            }
+            .info_city {
+                margin-left: $var20;
+                p {
+                    font-size: 60px;
+                }
+                .date_time_info {
+                    font-size: $var20;
+                }
+            }
+        }
+    }
+    
+
+    h1 {
+        color: white;
+        font-family: 'Hind Siliguri';
+    }
+    p {
+        color: white;
+        font-family: 'Hind Siliguri';
+    }
+    
+
