@@ -39,7 +39,7 @@ async function getWeather(city) {
   try {
     
     const { latitude, longitude } = await getCurrentLocation();
-    const _apiKey = '2930766239d448b9b6a152353230905'
+    const _apiKey = '96bb092e7a3d4832986150515232405'
     let _url = ``
     let _forcast = ``
     if(city) {
